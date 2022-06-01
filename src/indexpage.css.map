@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "ACAA,AAAA,CAAC,CAAA;EACG,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,UAAU,EAAE,UAAU;CACzB;;AACD;;EAEE;ADLF,AAAA,IAAI,CAAA;EAEA,gBAAgB,EEJL,qBAAkB;EFK7B,SAAS,EAAE,MAAsC;CAIpD;;AAED;;;;;;;;;;;;;;EAcE",
+    "sources": [
+        "scss/indexpage.scss",
+        "scss/_reset.scss",
+        "scss/_variable.scss"
+    ],
+    "names": [],
+    "file": "indexpage.css"
+}

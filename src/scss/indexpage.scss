@@ -1,0 +1,26 @@
+@import "./reset";
+@import "./variable";
+body{
+   
+    background-color: $primary-color;
+    font-size: map-get($font-weight , small)*0.035+px;
+    // #{&}.root{
+
+    // }
+}
+
+/*
+preference->settings->extension->live-scss-compiler->look for format
+"liveSassCompile.settings.formats": [
+
+
+
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath":"./src", ///yor saving path
+            "savePathSegmentKeys": null,
+            "savePathReplaceSegmentsWith": null
+        }
+    ],
+*/ 
