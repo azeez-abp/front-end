@@ -30,7 +30,7 @@ useEffect(()=>{
 
 let linkStateToProps  = state=>{
     //get the data
-    //console.log(state,"MY STATES")
+    console.log(state,"MY STATES")
     return{
          __Login__  : state.loginReducer
     }
