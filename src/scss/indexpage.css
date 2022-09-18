@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*
+underscore in the name mean do not create the file copy its content
+*/
+body {
+  background-color: rgba(0, 168, 89, 0.7);
+  font-size: 17.5px;
+}
+
+/*
+preference->settings->extension->live-scss-compiler->look for format
+"liveSassCompile.settings.formats": [
+
+
+
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath":"./src", ///yor saving path
+            "savePathSegmentKeys": null,
+            "savePathReplaceSegmentsWith": null
+        }
+    ],
+*//*# sourceMappingURL=indexpage.css.map */
