@@ -3,9 +3,11 @@ export const testReducer  = function(/*the state send by dispath*/state={type:"T
 
     switch (action.type) {
         case 'TESTING':
-            return {...state,payload:state.payload };
-        case 'INCREAMENT':
-            return {...state,payload:state.payload };
+            return {...state,payload:action.payload };
+        case 'TOGGLE_IS_ON':
+            return {...state,payload:action.payload };
+        case 'TOGGLE_IS_ON':
+            return {...state,payload:action.payload ||[] };
 
         default:
             return state;

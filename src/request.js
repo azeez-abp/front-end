@@ -21,13 +21,12 @@ function request(){
               }
                
           
-                var request = new Request(data.url, {
-                    method: 'POST', 
-                    mode: 'cors',
-                    headers: {"Accept": "application/json",
-                               "Authorization":data.auth?data.auth:''
-                            },
-                    body: form
+                let request = new Request(data.url, {
+                  method: 'POST', 
+                  // mode: 'cors',
+                   // 'Content-Type': 'application/json',this will not allow json to be pass
+                   headers:  data.header || {'Accept':'application/json'},
+                   body: form
                 });                   
 
   
@@ -37,8 +36,7 @@ function request(){
 
                 const response = await fetchResult;
                 const jsonData = await response.json();
-                // let output = document.querySelector(".output").textContent=JSON.stringify(jsonData,null,2)
-                //console.log(jsonData)
+             
   
            
             return  {bol:true, res: jsonData}

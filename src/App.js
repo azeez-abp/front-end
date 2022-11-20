@@ -2,11 +2,11 @@ import React, {useEffect} from 'react';
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import {FiSettings} from 'react-icons/fi';
 import Login from './components/Login';
-
+import Dashboard from './components/Dashboard';
 import './App.css';
 
 // const Login  = ()=><h2>Login</h2>
-const Dashboard  = ()=><h2>Dashboard</h2>
+// const Dashboard  = ()=><h2>Dashboard</h2>
 function App() {
   const isActiveMenue=false;
   let data  = null
@@ -25,9 +25,9 @@ let  updater  = async()=>{
     });
     return p
 }  
- updater().then(d=>{
-  console.log(d)
- })
+//  updater().then(d=>{
+//   console.log(d)
+//  })
 
 console.log(data,updater())
 
@@ -46,8 +46,7 @@ console.log(data,updater())
              <button className='hover:bg-sky-600 text-white bg-main-dark-bg'>
                 <FiSettings />
              </button>
-   
-          
+         </div>
          </div>
           {/* sidebar */}
            <Routes >
@@ -59,7 +58,7 @@ console.log(data,updater())
         {/* sidebar */}
 
 
-       </div>
+    
       </BrowserRouter>
     </div>
   );

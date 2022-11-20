@@ -1,0 +1,85 @@
+.login{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.login .left{
+    width: 40%;
+    min-height: 100vh
+}
+
+.login .right{
+    width: 60%;
+  min-height: 100vh;
+}
+  .login >.right > .container{
+    padding: 3em;
+    width: 70%;
+}
+@media (max-width:520px) {
+    .login .left{
+       display:none
+    }
+  
+    .login .right,.login .right .container{
+        padding: 6px;
+        width: 100%;
+    }
+}
+
+#exampleCheck2{
+    border: 2px solid #fff;
+    width: 30px;
+    height: 30px;
+    margin-top: 0px;
+}
+
+.check-out::before{
+    position: absolute;
+    content: '';
+    border-bottom: 4px solid #fff;
+    border-left: 4px solid #fff;
+    transform: rotate(-69deg);
+    width: 20px;
+    height: 11px;
+    top: 10px;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: all 3s ease-in-out;
+}
+.checked-in::before{
+    position: absolute;
+    content: '';
+    border-bottom: 4px solid #fff;
+    border-left: 4px solid #fff;
+    transform: rotate(-54deg);
+    width: 20px;
+    height: 11px;
+    top: 7px;
+    left: 3px;
+    opacity: 1;
+    visibility: visible;
+    transition: all 3s ease-in-out;
+    
+   
+}
+
+.submit{
+    margin-bottom: 38px;
+    background: crimson;
+}
+
+.submit:hover{
+    margin-bottom: 38px;
+    background: crimson;
+    opacity: .5;
+}
+
+.spinner{
+    position: absolute;
+    width: 29%;
+    left: 0;
+    top: 9px;
+}

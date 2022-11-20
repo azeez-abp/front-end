@@ -5,7 +5,7 @@ export const  Login_action   = Login;
 export const  Test_action  =  test;
 
 
-/**
+/**https://jsonplaceholder.typicode.com/posts
  * 1 create store(@param all reducer,@param composeEnhancer(applyMiddleWare(thunk)))
  * 2 create action function that @return {type:'NAMEOFACTION':payload:DATA_FROM_REQUEST_OR_ANY}
  * 3 create reducers function(@param action{}, state) @return state by checking action type
